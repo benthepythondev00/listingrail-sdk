@@ -1,4 +1,5 @@
 """The Listingrail client. Standard library only."""
+import http.client
 import json
 import os
 import urllib.error
@@ -84,7 +85,7 @@ class Listingrail:
             status, raw = self._transport(method, url, headers, data, self.timeout)
         except ListingrailError:
             raise
-        except (OSError, ValueError) as exc:  # URLError, timeouts and refused connections are OSError
+        except (OSError, ValueError, http.client.HTTPException) as exc:  # URLError, timeouts and refused connections are OSError
             raise APIConnectionError(f"Could not reach {self.base_url}: {exc}") from exc
         text = raw.decode("utf-8", "replace") if raw else ""
         try:

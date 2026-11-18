@@ -12,7 +12,7 @@ Each script reads the key from the `LISTINGRAIL_API_KEY` environment variable. T
 Python:
 
 ```bash
-pip install listingrail
+pip install listingrail          # or, from this repository: pip install ./python
 python examples/python/demo_no_key.py
 export LISTINGRAIL_API_KEY=re_your_key
 python examples/python/search_to_csv.py rightmove Manchester rent 20 listings.csv

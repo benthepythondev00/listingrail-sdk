@@ -96,8 +96,9 @@ export class Listingrail {
     this.#apiKey = apiKey || globalThis.process?.env?.LISTINGRAIL_API_KEY || undefined;
     this.baseUrl = baseUrl.replace(/\/+$/, "");
     this.timeout = timeout;
-    this.#fetch = fetchFn ?? globalThis.fetch;
-    if (typeof this.#fetch !== "function") throw new ListingrailError("No fetch function. Use Node 18 or newer, or pass { fetch }.");
+    if (typeof (fetchFn ?? globalThis.fetch) !== "function") throw new ListingrailError("No fetch function. Use Node 18 or newer, or pass { fetch }.");
+    // called without a receiver: a browser's fetch throws when it is called as a method of another object
+    this.#fetch = fetchFn ? (...args) => fetchFn(...args) : (...args) => globalThis.fetch(...args);
   }
 
   /** Whether the client has a key. The key itself is private, so it does not show up in logs of the object. */
