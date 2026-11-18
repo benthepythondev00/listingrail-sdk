@@ -40,8 +40,10 @@ Python and JavaScript clients for [Listingrail](https://listingrail.com), a real
 ## Install
 
 ```bash
-pip install listingrail      # Python
-npm install listingrail      # JavaScript
+# Python
+pip install "git+https://github.com/benthepythondev00/listingrail-sdk#subdirectory=python"
+# JavaScript
+npm install https://github.com/benthepythondev00/listingrail-sdk/releases/download/v0.1.0/listingrail-0.1.0.tgz
 ```
 
 ## Quick start

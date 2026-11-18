@@ -7,7 +7,7 @@ Python 3.9 or newer. No dependencies: it uses the standard library.
 ## Install
 
 ```bash
-pip install listingrail
+pip install "git+https://github.com/benthepythondev00/listingrail-sdk#subdirectory=python"
 ```
 
 A free key gives 250 listings a month for an email address, no card: https://listingrail.com/#key

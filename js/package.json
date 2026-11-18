@@ -37,5 +37,10 @@
   "homepage": "https://listingrail.com",
   "author": "Listingrail <hello@listingrail.com>",
   "license": "MIT",
-  "sideEffects": false
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benthepythondev00/listingrail-sdk.git",
+    "directory": "js"
+  }
 }

@@ -25,6 +25,7 @@ test = ["pytest>=7"]
 [project.urls]
 Homepage = "https://listingrail.com"
 Documentation = "https://listingrail.com/docs/"
+Repository = "https://github.com/benthepythondev00/listingrail-sdk"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/listingrail"]

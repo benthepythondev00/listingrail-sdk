@@ -7,7 +7,7 @@ ESM, Node 18 or newer. No dependencies: it uses the global `fetch`. Types are in
 ## Install
 
 ```bash
-npm install listingrail
+npm install https://github.com/benthepythondev00/listingrail-sdk/releases/download/v0.1.0/listingrail-0.1.0.tgz
 ```
 
 A free key gives 250 listings a month for an email address, no card: https://listingrail.com/#key
