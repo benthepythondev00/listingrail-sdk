@@ -1,0 +1,8 @@
+{
+  "name": "listingrail-examples",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "listingrail": "file:../../js"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "listingrail",
+  "version": "0.1.0",
+  "description": "JavaScript client for the Listingrail real estate listings API: sale and rental listings from 22 property portals in one JSON shape.",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:live": "LISTINGRAIL_LIVE=1 node --test"
+  },
+  "keywords": [
+    "real estate",
+    "listings",
+    "rental",
+    "property",
+    "api",
+    "zillow",
+    "rightmove",
+    "idealista"
+  ],
+  "homepage": "https://listingrail.com",
+  "author": "Listingrail <hello@listingrail.com>",
+  "license": "MIT",
+  "sideEffects": false
+}

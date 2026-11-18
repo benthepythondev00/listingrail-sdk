@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+node_modules/
+*.tgz
+.env
+.env.*
+*.csv
+.DS_Store
+examples/js/package-lock.json
